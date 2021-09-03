@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+</form>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<
+{% block body %}
+<div>
+<h1 class="text-center"> Add Comment </h1>
+</div>
+<div class="container my-6">
+<form action="" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        
+        
+        {% comment %} <input type="text"> {% endcomment %}
+        <input type="submit" value="Add Comment" class="btn btn-dark">
+</form>
+</div>
+{% endblock body %}
+
+
+
+
+</body>
+</html>
